@@ -3,6 +3,8 @@ import pprint
 import boto3
 import json
 
+
+#test comment
 ec2 = boto3.client('ec2')
 
 #Manual function to handle JSON Dump error with datetime
@@ -28,7 +30,7 @@ def dict_depth(d, depth=0):
 instances = info(ec2.describe_instances())
 
 #print (instances)
-#instances = ec2.describe_instances()
+#instance = ec2.describe_instances()
 #print (type(instances))
 
 ##Transferring dict into json form
